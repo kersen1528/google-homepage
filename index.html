@@ -12,18 +12,24 @@
         padding: 0;
     }
 
-    /* .left {
-        display: block;
-        float: left;
-    } */
-
     .right {
-        display: flex;
         float: right;
-    }
+    } 
 
     li {
-        display: inline;
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: grey;
+        text-align: center;
+        padding: 18px 15px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline;
     }
 
     #google {
@@ -35,7 +41,7 @@
     #search-bar {
         display: block;
         margin: auto;
-        margin-top: -210px;
+        /* margin-top: -210px; */
         padding-top: 10px;
         border-radius: 20px;
         font-size: 30px;
@@ -69,7 +75,7 @@
         position: absolute;
         bottom: 0px;
         width: 100%;
-        
+         
     }
 </style>
 
@@ -82,12 +88,12 @@
 
         <header>
             <ul class = "left">
-                <li>About</li>
-                <li>Store</li>
+                <li><a href = "#">About</a></li>
+                <li><a href = "#">Store</a></li>
             </ul>
             <ul class = "right">
-                <li>Gmail</li>
-                <li>Images</li>
+                <li><a href = "#">Gmail</a></li>
+                <li><a href = "#">Images</a></li>
             </ul>
         </header>
 
