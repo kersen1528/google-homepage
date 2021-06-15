@@ -7,7 +7,19 @@
     }
 
     ul {
-        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .left {
+        display: block;
+        float: left;
+    } */
+
+    .right {
+        display: flex;
+        float: right;
     }
 
     li {
@@ -20,26 +32,43 @@
         margin: 222px auto;
     }
 
-    input {
+    #search-bar {
         display: block;
         margin: auto;
-        margin-top: -200px;
+        margin-top: -210px;
         padding-top: 10px;
         border-radius: 20px;
         font-size: 30px;
         width: 500px;
         border-color:  #f2f2f2;
         font-size: 18px;
-        font-weight: 50%;
 
     }
+
+    form {
+        text-align: center;
+    }
+
+    .google-lucky {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: px;
+        width: 130px;
+        background-color:  #f8f9fa;
+        border-color: transparent;
+        font-size: 14px;
+        color: #464a4d;
+
+    }
+
 
     footer {
         background-color:  #f2f2f2;
         position: absolute;
         bottom: 0px;
         width: 100%;
-        
         
     }
 </style>
@@ -52,11 +81,11 @@
     <body>
 
         <header>
-            <ul>
+            <ul class = "left">
                 <li>About</li>
                 <li>Store</li>
             </ul>
-            <ul>
+            <ul class = "right">
                 <li>Gmail</li>
                 <li>Images</li>
             </ul>
@@ -65,19 +94,21 @@
         <img id = "google" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "Google">
 
         <form>
-            <input type = "text">
+            <input id = "search-bar" type = "text">
+            <input class = "google-lucky" type = "button" value = "Google Search">
+            <input class = "google-lucky" type = "button" value = "I'm feeling lucky">
         </form>
 
         <footer>
-            <ul>
-                <li>Advertising</li>
-                <li>Business</li>
+            <ul class = "left">
+                <li><a href = "#">Advertising</a></li>
+                <li><a href = "#">Business</a></li>
+                <li><a href = "#">How Search works</a></li>
             </ul>
-            <ul>
-                <li>How Search works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
+            <ul class = "right">
+                <li><a href = "#">Privacy</a></li>
+                <li><a href = "#">Terms</a></li>
+                <li><a href = "#">Settings</a></li>
             </ul>
         </footer>
 
